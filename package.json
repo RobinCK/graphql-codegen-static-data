@@ -1,0 +1,34 @@
+{
+  "name": "graphql-codegen-static-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "scripts": {
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build": "npm run build:cjs && npm run build:esm"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js"
+    }
+  },
+  "author": "Igor Ognichenko <ognichenko.igor@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@graphql-codegen/core": "^4.0.2",
+    "graphql": "^16.9.0",
+    "lodash.get": "^4.4.2",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.3.0",
+    "typescript": "^5.5.4"
+  },
+  "publishConfig": {
+    "directory": "dist",
+    "access": "public"
+  }
+}

@@ -1,0 +1,35 @@
+# Node modules
+node_modules/
+
+# Build output
+dist
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.suo
+*.ntvs_analysis.dat
+*.vscode/
+
+# Optional npm cache directory
+.npm/
+
+# Other generated files
+*.tgz
+*.swp
+
+# Coverage
+coverage/

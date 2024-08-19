@@ -1,0 +1,30 @@
+# TypeScript source files (keep the compiled output in the dist folder)
+src/
+
+# Tests
+tests/
+*.test.ts
+*.spec.ts
+
+# Documentation
+docs/
+
+# Environment variables
+.env
+
+# Local npm cache
+.npm/
+
+# IDE and editor directories
+.idea/
+.vscode/
+*.suo
+*.ntvs_analysis.dat
+*.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
